@@ -1,0 +1,142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Attendance confirmation / Регистрация гостей</title>
+<script src="/static/js/jquery.js"></script>
+<script>
+    function swapImages() {
+        var $active = $('#logo .active');
+        var $next = ($('#logo .active').next().length > 0) ? $('#logo .active').next() : $('#logo img:first');
+        $active.removeClass('active');
+        $next.addClass('active');
+    }
+
+    $(document).ready( function() {
+        setInterval('swapImages()', 4000);
+    })
+</script>
+<style type="text/css">
+<!--
+body {
+	background:url(/static/images/bg_new.jpg) top center no-repeat #0A1543;
+	xbackground-color: #001C75;
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+
+}
+.divMain {
+	width: 1000px;
+	margin-right: auto;
+	margin-left: auto;
+	xbackground-image: url(/static/images/grad.jpg);
+	background-repeat: repeat-x;
+	padding-bottom: 20px;
+}
+.divHead {height:400px;}
+.divLogo {
+	text-align: center;
+	margin-top: -400px;
+    width: 485px;
+    margin-right: auto;
+	margin-left: auto;
+}
+.divLogo img {
+    display:none;
+}
+.divLogo img.active {
+    display:block;
+}
+.divContent {
+	width: 875px;
+	margin-left: 45px;
+	xbackground-color: #FFF;
+	color:#ffffff;
+	padding: 20px;
+	text-align: center;
+	margin-top:0px;
+}
+body,td,th {
+	font-family: Lucida Sans Unicode, Lucida Grande, sans-serif;
+}
+
+a, a:active,a:visited,a:hover {color:#ffffff;}
+
+.formTable {
+	font-size: 18px;
+}
+.formTable tr {
+    xbackground-color: #6CF;
+}
+.formTable th {
+	text-align:left;
+	font-weight: normal;
+}
+.formTable th.fieldRequired {
+	text-align:left;
+	font-weight: bold;
+}
+.formTable input {
+    font-family: Lucida Sans Unicode, Lucida Grande, sans-serif;
+    border: 1px solid #021b44;
+	width: 300px;
+	padding: 4px;
+}
+.formTable select {
+    font-family: Lucida Sans Unicode, Lucida Grande, sans-serif;
+    border: 1px solid #021b44;
+	width: 300px;
+	padding: 4px;
+}
+.formTable textarea {
+    font-family: Lucida Sans Unicode, Lucida Grande, sans-serif;
+    border: 1px solid #021b44;
+	width: 300px;
+	padding: 4px;
+}
+.formTable input.fieldError {
+    background-color: #FCC;
+}
+.formNumInput {
+	border: 1px solid #021b44;
+    font-family: Lucida Sans Unicode, Lucida Grande, sans-serif;
+	font-size: 36px;
+	font-weight: bold;
+	padding: 4px;
+	text-align: center;
+	background-color: #ffffff;
+}
+.formButton {
+	font-size:110%;
+	font-weight: bold;
+	color: #CCC;
+	background-color: #900;
+	border: 1px solid #021b44;
+    padding: 8px
+}
+.error {
+	padding: 2px;
+	width: 500px;
+	margin-right: auto;
+	margin-left: auto;
+	border: thick double #FAA620;
+	color: #FAA620;
+}
+-->
+</style></head>
+
+<body bgcolor="#001C75">
+<div class="divMain">
+  <div class="divHead"></div>
+  <div id="logo" class="divLogo">
+    <img src="/static/images/sblogo-en_new.png" width="485" height="384" />
+    <img src="/static/images/sblogo-ru_new.png" width="485" height="384" class="active" />
+  </div>
+  <div class="divContent">
+{% block content%}{% endblock %}
+  </div>
+</div>
+</body>
+</html>

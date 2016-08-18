@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+
+
+{% load i18n %}{% get_current_language as LANGUAGE_CODE %}
+{% block content %}
+<body onload="document.getElementById('id_code').focus()">
+
+<table border="0" align="center" cellpadding="0" cellspacing="0">
+    <tr>
+<!--
+      <td><img src="/static/images/inv.jpg" width="202" height="300" alt="{% trans 'Invitation' %}" /></td>
+-->
+      <td align="center">
+
+{% if form.errors %}
+<div class="error">
+ {% if form.non_field_errors %}
+  <ul>
+  {% for error in form.non_field_errors %}
+     <li>{% trans 'Error' %}: <strong>{{ error|escape }}</strong></li>
+  {% endfor %}
+  </ul>  
+ {% endif %}
+  {% for field in form %}
+    {% if field.errors %}<!-- <li>{% trans 'Error in field' %} <strong>'{{ field.label }}'</strong>: -->
+	  {% for err in field.errors %}
+		{{ err|striptags }}<br/>
+      {% endfor %}<!-- </li> -->
+	{% endif %}
+  {% endfor %}
+
+</div>
+{% endif %}
+
+<p>Пожалуйста, введите Ваш код подтверждения, указанный в приглашении.</p>
+<p>Please enter Your Confirmation Сode stated on the Invitation.</p>
+
+
+<form action="{% url main.views.check_code %}" method="post">{% csrf_token %}
+<p><input id="id_code" type="text" name="code" class="formNumInput" size="5" maxlength="5" />
+</p>
+<p><input type="submit" class="formButton" value="Submit/{% trans 'Submit' %}"/>
+</p>
+
+
+</form>
+
+
+
+	</td>
+    </tr>
+  </table>
+
+{% endblock %}

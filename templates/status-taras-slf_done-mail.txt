@@ -1,0 +1,26 @@
+{% load i18n %}
+{% get_current_language as LANGUAGE_CODE %}
+{% block content %}
+
+{%if inv.sex = 'M' %}{% trans 'Dear Mr' %}{% else %}{% trans 'Dear Mrs' %}{% endif %} {{ inv.f_name }},
+{% trans 'thank you for confirming your attendance to the Gala World Premiere on December 16 at Luzhniki Palace of Sport' %}.
+
+{% trans 'Guests are invited from 18:00' %}
+{% trans 'Performance starts at 19:00' %}
+
+{% trans 'You can pick up in person your' %} {{ con.places_num }} {% trans 'ticket(s) on December 12-14 from Stage Entertainment office' %}:
+{% trans 'Moscow, 28 Komsomolsky ave., MDM Theater, Staff entrance' %}
+
+{% trans 'Please, contact us before arrival at the office by +7 495 780-35-53' %}.
+
+{% trans 'Remember, you MUST have your Invitation to pick up your tickets' %}.
+
+{% if inv.parking_place = 'Y' %}
+{% trans 'Driving directions to Luzhniki Palace of Sport' %}:
+http://sbshow.ru/static/images/ru-parking.jpg
+{% endif %}
+
+{% trans 'With Best Regards' %},
+"Stage Entertainment"
+
+{% endblock %}

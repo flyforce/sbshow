@@ -1,0 +1,20 @@
+{% load i18n %}
+{% get_current_language as LANGUAGE_CODE %}
+{% block content %}
+
+<p>
+{% trans 'Dear Guest ' %} {{ con.f_name }},
+</p>
+<p>
+{% trans 'Thank you for confirming your attendance to the "Mamma Mia!" at MDM Theatre, Komsomolsky prospect 28.' %}
+</p>
+
+<p>
+{% trans 'Soon we will mail you an invitation to the concrete spectacle date' %}
+</p>
+
+<br/><br/>
+<p>{% trans 'With Best Regards' %},<br/>
+&quot;Stage Entertainment&quot;</p>
+
+{% endblock %}

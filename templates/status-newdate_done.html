@@ -1,0 +1,199 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block content %}
+
+<p>
+{%if inv.sex = 'M' %}
+    {% trans 'Dear Mr' %}
+{% else %}
+    {% trans 'Dear Mrs' %}
+{% endif %}
+{{ inv.f_name }},
+{% trans 'thank you for your Registration. From December 19 until December 27 You may contact Victoria Korableva to choose and book tickets for other day.' %}</p>
+<br/><br/>
+<p>{% trans 'Our performances are on' %}:</p>
+<table border="0" cellspacing="2" cellpadding="3">
+  <tr>
+    <th bgcolor="#CCCCCC">{% trans 'Date' %}</td>
+    <th bgcolor="#CCCCCC">&nbsp;</td>
+    <th bgcolor="#CCCCCC">1<sup>{% trans 'st' %}</sup> {% trans 'show' %}
+      </td>
+    <th bgcolor="#CCCCCC">2<sup>{% trans 'nd' %}</sup> {% trans 'show' %}
+      </td>
+    <th bgcolor="#CCCCCC">3<sup>{% trans 'rd' %}</sup> {% trans 'show' %}
+      </td>
+  </tr>
+  <tr>
+    <td>16.12.11</td>
+    <td>{% trans 'Friday' %}</td>
+    <td>&nbsp;</td>
+    <td>19.00</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>17.12.11</td>
+    <td>{% trans 'Saturday' %}</td>
+    <td>11.00</td>
+    <td>14.30</td>
+    <td>18.00</td>
+  </tr>
+  <tr>
+    <td>18.12.11</td>
+    <td>{% trans 'Sunday' %}</td>
+    <td>11.00</td>
+    <td>14.30</td>
+    <td>18.00</td>
+  </tr>
+  <tr>
+    <td>19.12.11</td>
+    <td>{% trans 'Monday' %}</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>20.12.11</td>
+    <td>{% trans 'Tuesday' %}</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>21.12.11</td>
+    <td>{% trans 'Wednesday' %}</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>22.12.11</td>
+    <td>{% trans 'Thursday' %}</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>23.12.11</td>
+    <td>{% trans 'Friday' %}</td>
+    <td>&nbsp;</td>
+    <td>19.00</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>24.12.11</td>
+    <td>{% trans 'Saturday' %}</td>
+    <td>11.00</td>
+    <td>14.30</td>
+    <td>18.00</td>
+  </tr>
+  <tr>
+    <td>25.12.11</td>
+    <td>{% trans 'Sunday' %}</td>
+    <td>11.00</td>
+    <td>14.30</td>
+    <td>18.00</td>
+  </tr>
+  <tr>
+    <td>26.12.11</td>
+    <td>{% trans 'Monday' %}</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>27.12.11</td>
+    <td>{% trans 'Tuesday' %}</td>
+    <td>11.00</td>
+    <td>14.30</td>
+    <td>19.00</td>
+  </tr>
+  <tr>
+    <td>28.12.11</td>
+    <td>{% trans 'Wednesday' %}</td>
+    <td>11.00</td>
+    <td>14.30</td>
+    <td>19.00</td>
+  </tr>
+  <tr>
+    <td>29.12.11</td>
+    <td>{% trans 'Thursday' %}</td>
+    <td>11.00</td>
+    <td>14.30</td>
+    <td>19.00</td>
+  </tr>
+  <tr>
+    <td>30.12.11</td>
+    <td>{% trans 'Friday' %}</td>
+    <td>11.00</td>
+    <td>14.30</td>
+    <td>19.00</td>
+  </tr>
+  <tr>
+    <td>31.12.11</td>
+    <td>{% trans 'Saturday' %}</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>01.01.12</td>
+    <td>{% trans 'Sunday' %}</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>02.01.12</td>
+    <td>{% trans 'Monday' %}</td>
+    <td>11.00</td>
+    <td>14.30</td>
+    <td>18.00</td>
+  </tr>
+  <tr>
+    <td>03.01.12</td>
+    <td>{% trans 'Tuesday' %}</td>
+    <td>11.00</td>
+    <td>14.30</td>
+    <td>18.00</td>
+  </tr>
+  <tr>
+    <td>04.01.12</td>
+    <td>{% trans 'Wednesday' %}</td>
+    <td>11.00</td>
+    <td>14.30</td>
+    <td>18.00</td>
+  </tr>
+  <tr>
+    <td>05.01.12</td>
+    <td>{% trans 'Thursday' %}</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>06.01.12</td>
+    <td>{% trans 'Friday' %}</td>
+    <td>11.00</td>
+    <td>14.30</td>
+    <td>18.00</td>
+  </tr>
+  <tr>
+    <td>07.01.12</td>
+    <td>{% trans 'Saturday' %}</td>
+    <td>11.00</td>
+    <td>14.30</td>
+    <td>18.00</td>
+  </tr>
+  <tr>
+    <td>08.01.12</td>
+    <td>{% trans 'Sunday' %}</td>
+    <td>11.00</td>
+    <td>14.30</td>
+    <td>18.00</td>
+  </tr>
+</table>
+<br/><br/>
+<p>{% trans 'With Best Regards' %}<br/>
+&quot;Stage Entertainment&quot;</p>
+
+{% endblock %}

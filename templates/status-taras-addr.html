@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block content %}
+
+{% if form.errors %}
+<div class="error">
+  <ul>
+  {% for error in form.non_field_errors %}
+     <li><strong>{{ error|escape }}</strong></li>
+  {% endfor %}
+  {% for field in form %}
+    {% if field.errors %}<li><strong>'{{ field.label }}'</strong>: {{ field.errors|striptags }}</li>{% endif %}
+  {% endfor %}
+  </ul>
+</div>
+{% endif %}
+
+<form action="{% url main.views.taras_addr %}" method="post">{% csrf_token %}
+<table align="center" class="formTable" cellspacing="1" cellpadding="3">
+
+<tr><th{% if form.address.field.required %} class="fieldRequired"{% endif %}><label for="id_address">{{ form.address.label }}:</label></th><td>{{ form.address }}</td></tr>
+
+</table><br/>
+<input type="submit" class="formButton" value="{% trans 'Submit' %}"/>
+</form>
+
+{% endblock %}

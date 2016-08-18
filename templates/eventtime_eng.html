@@ -1,0 +1,1 @@
+{% load i18n %}{% get_current_language as LANGUAGE_CODE %}{% with d=inv.show.event_time.date %}{{ d|date:"j" }}<sup>{{ d|date:"S" }}</sup> {{ d|date:"F Y" }}{% endwith %}

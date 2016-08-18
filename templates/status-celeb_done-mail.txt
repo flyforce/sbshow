@@ -1,0 +1,17 @@
+{% load i18n %}
+{% get_current_language as LANGUAGE_CODE %}
+{% block content %}
+
+{%if inv.sex = 'M' %}{% trans 'Dear Mr' %}{% else %}{% trans 'Dear Mrs' %}{% endif %} {{ inv.f_name }},
+{% trans 'thank you for confirming your attendance to the Gala World Premiere on December 16 at Luzhniki Palace of Sport' %}.
+
+{% trans 'You will obtain your' %} {{ con.places_num }} {% trans 'ticket(s) in exchange for the initiation on the day of the Premiere at the registration desk at the entrance' %} "{% trans 'B' %}".
+
+{% trans 'Guests are invited from 18:00' %}
+{% trans 'Performance starts at 19:00' %}
+
+
+{% trans 'With Best Regards' %},
+"Stage Entertainment"
+
+{% endblock %}

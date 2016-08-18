@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% get_current_language as LANGUAGE_CODE %}
+
+{% block content %}
+
+{% with s=inv.show %}
+<p>
+{% if inv.language = 'ru' %}	
+Регистрация на мероприятие «{{ s.name }}» {{ s.event_time.date }} {{ s.get_reg_status_display }}.
+{% else %}
+Registration for the event "{{ s.eng_name|default:s.name }}" on {{s.event_time.date}} is {{ s.get_reg_status_display }}.
+{% endif %} 
+</p>
+<p>
+{% trans 'If you have any questions please contact our Opening night Manager' %} <br/>
+{% trans 'by calling +7 903 578 01 12' %}</p>
+
+
+
+{% endwith%}
+
+{% endblock %}

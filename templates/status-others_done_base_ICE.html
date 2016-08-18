@@ -1,0 +1,65 @@
+{% load i18n %}
+{% get_current_language as LANGUAGE_CODE %}
+
+<p>
+{% if inv.sex == 'M' %}
+    {% trans 'Dear Mr' %}
+{% else %}
+    {% trans 'Dear Mrs' %}
+{% endif %} 
+{% if inv.language == 'ru' %}
+  {{ inv.f_name }} {{ inv.s_name }} ,
+{% else %}
+    {{ inv.f_name }},
+{% endif %} 
+
+</p>
+
+{% with s=inv.show pn=con.places_num|default:2 %}
+{% if inv.language == 'ru' %}
+<p>Вы успешно подтвердили свое присутствие на {% if s.show == 'ALD' %}Премьере ледового{% else %}московской Премьере{% endif %} арена-шоу<br/>
+«{{ s.name }}»,<br/>
+которая состоится {{ s.event_time.date }} {{ s.venue }}, <br/>
+по адресу: {{ s.address }}. </p>
+<p> 
+{% if inv.entrance == 'V' %}
+В день премьеры на стойке регистрации гостей в фойе Вы сможете <br/>
+обменять Ваше приглашение на билеты с указанием мест в зрительном зале.
+{% else %}
+Ваши билеты будут доставлены по указанному Вами адресу. <br/>
+В случае, если Вы не получите билеты за день до спектакля, пожалуйста, <br/>
+свяжитесь с менеджером премьеры по указанному ниже телефону.
+{% endif %} 
+</p>
+<p> 
+Напоминаем, что Ваше приглашение действительно на {{pn}} персон{% if pn == 1 %}у{%else%}{% if pn < 5 %}ы{% endif %}{% endif %}.
+</p>
+
+<p>Сбор гостей {% if s.doors_open != None %} в {%endif%} {{s.doors_open|time:"H:i"|default:"за 1 час до начала представления"}}.<br/>
+Начало представления в {% if inv.entrance == 'V' and s.show == 'ICE' %}14:00{% else %}{{s.event_time|time:"H:i"}}{% endif %}.</p>
+<p>За дополнительной информацией обращайтесь, пожалуйста,<br/>
+к менеджеру премьеры по телефону: +7 903 578 01 12 </p>
+
+<p>
+C уважением,<br/>
+Театральная компания «Стейдж Энтертейнмент»</p>
+
+{% else %}
+<p>Thank you for confirming your attendance <br/>
+to the {% if inv.show.show == 'ALD' %}Gala{% else %}Moscow{% endif %} Opening Night of {{ s.eng_name|default:s.name }}<br/>
+on {{s.event_time.date|date:"F j, Y"}} {{s.eng_venue|default:s.venue}}.<br/>
+Address: {{s.eng_address|default:s.address}}.</p>
+<p> On the day of the performance please present your invitation plus ID <br/>
+on arrival at the Guest Reception to receive your tickets.</p>
+<p> We kindly remind you that your invitation is valid for {{pn}} person{% if pn > 1 %}s{% endif %}.</p>
+
+<p>Doors open at {{s.doors_open|time:"H:i"|default:"1 hour before show start."}}<br/>
+Show starts at {{s.event_time.time|time:"H:i"}}</p>
+<p>In case of any questions please call Opening Night hotline<br/>
++7 903 578 01 12 </p>
+
+<p>
+With Best Regards,<br/>
+Stage Entertainment</p>
+{% endif %} 
+{% endwith%}

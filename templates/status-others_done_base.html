@@ -1,0 +1,36 @@
+{% load i18n %}{% get_current_language as LANGUAGE_CODE %}{% with s=inv.show pn=con.places_num|default:2 %}
+{% if inv.language == 'ru' %}
+Вы успешно подтвердили свое присутствие на премьере<br/>новогоднего ледового арена-шоу «{{ s.name }}»,<br/>
+которая состоится {{ s.event_time.date }} {{ s.venue }} <br/>
+по адресу: {{ s.address }}.
+{% if lpage %}<br/>Копия подтверждения будет выслана Вам на указанный электронный адрес.{% endif %}
+<p>{% if inv.entrance == 'V' or inv.category == 'CELEB' %}В день премьеры на стойке регистрации гостей в подъезде «Б»<br/>
+Вы сможете обменять Ваше приглашение на билеты.{% else %}Ваши билеты будут доставлены по указанному Вами адресу. <br/>
+В случае, если Вы не получите билеты за день до спектакля, пожалуйста, <br/>
+свяжитесь с менеджером премьеры по указанному ниже телефону.{% endif %}<br/>
+Напоминаем, что Ваше приглашение действительно на {{pn}} персон{% if pn == 1 %}у{%else%}{% if pn < 5 %}ы{% endif %}{% endif %}.
+</p>
+<p>Прибытие гостей {% if s.doors_open != None %} в {%endif%} {{s.doors_open|time:"H:i"|default:"за 1 час до начала представления"}}. Начало представления в {{s.event_time|time:"H:i"}}.
+</p>
+<p>За дополнительной информацией обращайтесь, пожалуйста,<br/>
+к менеджеру премьеры по телефону: +7 903 578 01 12 </p>
+<p>
+C уважением,<br/>
+Театральная компания «Стейдж Энтертейнмент»</p>
+{% else %}
+Thank you for confirming your attendance <br/>
+to the Gala Opening Night of «{{ s.eng_name|default:s.name }}»<br/>
+on {% include "eventtime_eng.html" %}, {{s.eng_venue|default:s.venue}};<br/>
+{{s.eng_address|default:s.address}}.
+{% if lpage %}<br/>A copy of your registration will be sent to the email address you provided.{% endif %}
+<p>Please present this Invitation and ID upon arrival<br/>at the entrance B (guest reception) to receive your tickets.
+<br/>Reminder: Invitation is valid for {{pn}} people.
+</p>
+<p>Doors open {{s.doors_open|time:"H:i"|default:"1 hour before show start"}}. Curtain {{s.event_time.time|time:"H:i"}}.
+</p>
+<p>Should you have any questions please do not hesitate to contact<br/>
+our opening night manager by calling +7 903 578 01 12 </p>
+<p>
+With Best Regards,<br/>
+Stage Entertainment</p>
+{% endif %}{% endwith%}

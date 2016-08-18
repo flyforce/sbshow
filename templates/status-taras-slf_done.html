@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% get_current_language as LANGUAGE_CODE %}
+{% block content %}
+
+<p>
+{%if inv.sex = 'M' %}
+    {% trans 'Dear Mr' %}
+{% else %}
+    {% trans 'Dear Mrs' %}
+{% endif %} {{ inv.f_name }},
+</p>
+<p>
+{% trans 'thank you for confirming your attendance to the Gala World Premiere on December 16 at Luzhniki Palace of Sport' %}.
+</p>
+
+<p>
+{% trans 'Guests are invited from 18:00' %}<br/>
+{% trans 'Performance starts at 19:00' %}
+</p>
+
+<p>
+{% trans 'You can pick up in person your' %} {{ con.places_num }} {% trans 'ticket(s) on December 12-14 from Stage Entertainment office' %}:<br/>
+<strong>{% trans 'Moscow, 28 Komsomolsky ave., MDM Theater, Staff entrance' %}</strong>
+</p>
+
+<p>
+{% trans 'Please, contact us before arrival at the office by +7 495 780-35-53' %}.
+</p>
+
+<p><strong>{% trans 'Remember, you MUST have your Invitation to pick up your tickets' %}.</strong></p>
+
+{% if inv.parking_place = 'Y' %}
+<p>
+{% trans 'Driving directions to Luzhniki Palace of Sport' %}:
+</p>
+<p>
+<img src="/static/images/ru-parking.jpg" width="700" height="509"/>
+</p>
+{% endif %}
+
+<br/><br/>
+<p>{% trans 'With Best Regards' %},<br/>
+&quot;Stage Entertainment&quot;</p>
+
+{% endblock %}

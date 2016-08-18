@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block content %}
+
+<p>
+{%if inv.sex = 'M' %}
+    {% trans 'Dear Mr' %}
+{% else %}
+    {% trans 'Dear Mrs' %}
+{% endif %} {{ inv.f_name }},
+{% trans 'thank you for confirming your attendance to the Gala World Premiere on December 16 at Luzhniki Palace of Sport' %}.
+</p>
+
+<p>
+{% trans 'You will obtain your' %} {{ con.places_num }} {% trans 'ticket(s) in exchange for the initiation on the day of the Premiere at the registration desk at the entrance' %} &quot;{% trans 'B' %}&quot;.
+</p>
+
+<p>
+{% trans 'Guests are invited from 18:00' %}<br/>
+{% trans 'Performance starts at 19:00' %}
+</p>
+
+<br/><br/>
+<p>{% trans 'With Best Regards' %},<br/>
+&quot;Stage Entertainment&quot;</p>
+
+{% endblock %}

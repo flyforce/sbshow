@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% load i18n %}{% get_current_language as LANGUAGE_CODE %}
+{% block content %}
+
+<p>
+{% include "greeting.html" %} 
+</p>
+<p>
+{% if inv.language == 'ru' %}
+ Планируете ли Вы посетить премьеру ледового арена-шоу<br/>
+  «{{ inv.show.name }}» {{ inv.show.event_time.date }}?
+{% else %}
+ Please confirm your attendance to the Gala Opening Night of <br/>
+ «{{ inv.show.eng_name|default:inv.show.name }}» on {% include "eventtime_eng.html" %}
+{% endif %} 
+
+</p>
+<br/>
+<a href="{% url main.views.status code=inv.code status='C' %}">{% if inv.language == 'en' %}I confirm that I am able to attend {% else %}{% trans 'I confirm that I will attend' %} {% endif %}</a><br/><br/>
+<a href="{% url main.views.status code=inv.code status='R' %}">{% if inv.language == 'en' %}Unfortunately, {% endif %}{% trans 'I am unable to attend' %}</a><br/><br/>
+
+
+{% endblock %}

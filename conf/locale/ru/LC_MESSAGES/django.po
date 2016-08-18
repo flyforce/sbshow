@@ -1,0 +1,1043 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-09-08 05:42+0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: main/admin.py:31
+msgid "Mark selected confirmations as PARKING allocated (YES!)"
+msgstr "Пометить выбранные подтверждения - Парковка предоставлена (ДА!)"
+
+#: main/admin.py:36
+msgid "Mark selected confirmations as PARKING NOT allocated"
+msgstr "Пометить выбранные подтверждения - Парковка НЕ предоставлена"
+
+#: main/admin.py:41
+msgid "Mark selected confirmations with LOUNGE option=Yes"
+msgstr "Пометить выбранные подтверждения - ЕСТЬ доступ в ЛАУНДЖ"
+
+#: main/admin.py:46
+msgid "Mark selected confirmations with LOUNGE option=NO"
+msgstr "Пометить выбранные подтверждения - НЕТ доступа в ЛАУНДЖ"
+
+#: main/admin.py:51
+msgid "Mark selected confirmations as PLACES CATEGORY=1"
+msgstr "Пометить выбранные подтверждения - категория мест 1"
+
+#: main/admin.py:56
+msgid "Mark selected confirmations as PLACES CATEGORY=2"
+msgstr "Пометить выбранные подтверждения - категория мест 2"
+
+#: main/admin.py:61
+msgid "Mark selected confirmations as PLACES CATEGORY=3"
+msgstr "Пометить выбранные подтверждения - категория мест 3"
+
+#: main/admin.py:66
+msgid "Mark selected confirmations as PLACES CATEGORY=4"
+msgstr "Пометить выбранные подтверждения - категория мест 4"
+
+#: main/admin.py:71
+msgid "Mark selected confirmations as PLACES CATEGORY=5"
+msgstr "Пометить выбранные подтверждения - категория мест 5"
+
+#: main/admin.py:76
+msgid "Mark selected confirmations as CARD SENT"
+msgstr "Пометить выбранные подтверждения - КАРТА отправлена"
+
+#: main/admin.py:81
+msgid "Mark PLACES ALLOCATED for selected confirmations"
+msgstr "Пометить выбранные подтверждения - места в зале выделены"
+
+#: main/admin.py:99
+msgid "Mark selected invitations for International mailing"
+msgstr "Пометить выбранные приглашения для Международной рассылки"
+
+#: main/admin.py:100
+msgid "Mark selected invitations for Typographical personalisation"
+msgstr "Пометить выбранные приглашения для персонализации в Типографии"
+
+#: main/admin.py:101
+msgid "Export selected invitations"
+msgstr "Экспортировать выбранные приглашения"
+
+#: main/admin.py:102
+msgid "Mark selected invitations as sent"
+msgstr "Пометить выбранные приглашения как отправленные"
+
+#: main/admin.py:104
+msgid "Mark selected confirmations as tickets sent"
+msgstr "Пометить выбранные подтверждения как билеты отправлены"
+
+#: main/admin.py:113
+msgid "To fill by manager"
+msgstr "Заполняется менеджером"
+
+#: main/admin.py:113
+msgid ""
+"Some of these fields will be visible to the guest. Please enter the field "
+"values carefully."
+msgstr ""
+"Некоторые из этих полей будут доступны для просмотра гостю. Пожалуйста, "
+"вводите значения полей внимательно."
+
+#: main/admin.py:114
+msgid "To fill by administrator"
+msgstr "Заполняется администратором"
+
+#: main/admin.py:126
+msgid "Create confirmations for selected invitations"
+msgstr "Создать подтверждения для выбранных приглашений"
+
+#: main/models.py:14
+msgid "Female"
+msgstr "Женский"
+
+#: main/models.py:15
+msgid "Male"
+msgstr "Мужской"
+
+#: main/models.py:19 main/models.py:32
+msgid "Pass personally"
+msgstr "Передам лично"
+
+#: main/models.py:20 main/models.py:33 main/models.py:39
+msgid "Via courier"
+msgstr "Через курьера"
+
+#: main/models.py:21 main/models.py:34
+msgid "International mailing"
+msgstr ""
+
+#: main/models.py:22
+msgid "Send just ticket"
+msgstr "Сразу отправить билет"
+
+#: main/models.py:26 templates/check_code.html:11
+msgid "Invitation"
+msgstr "Приглашение"
+
+#: main/models.py:27
+msgid "Tickets"
+msgstr "Билеты"
+
+#: main/models.py:38
+msgid "Take personally"
+msgstr "Заберу лично"
+
+#: main/models.py:43
+msgid "Common"
+msgstr "Обычный"
+
+#: main/models.py:44
+msgid "VIP Partner"
+msgstr "VIP Партнер"
+
+#: main/models.py:45
+msgid "VIP Goverment"
+msgstr "VIP Гос. служащий"
+
+#: main/models.py:46
+msgid "Celebrity"
+msgstr "Знаменитость"
+
+#: main/models.py:47
+msgid "Goverment"
+msgstr "Гос. служащий"
+
+#: main/models.py:48
+msgid "Stage Staff"
+msgstr "Сотрудник Stage"
+
+#: main/models.py:49
+msgid "Barter"
+msgstr "Бартер"
+
+#: main/models.py:50
+msgid "Jornalists"
+msgstr "Журналисты"
+
+#: main/models.py:51
+msgid "Disney"
+msgstr ""
+
+#: main/models.py:52
+msgid "Prize-winner"
+msgstr ""
+
+#: main/models.py:57
+msgid "No matter"
+msgstr "Не важно"
+
+#: main/models.py:58
+msgid "Yes"
+msgstr "Да"
+
+#: main/models.py:59
+msgid "No"
+msgstr "Нет"
+
+#: main/models.py:63
+msgid "Rejected"
+msgstr "Отказ"
+
+#: main/models.py:64
+msgid "Confirmed"
+msgstr "Подтверждено"
+
+#: main/models.py:65
+msgid "Another date"
+msgstr "Другая дата"
+
+#: main/models.py:81
+msgid "Normal"
+msgstr ""
+
+#: main/models.py:82
+msgid "VIP"
+msgstr ""
+
+#: main/models.py:86
+msgid "not opened yet"
+msgstr "пока не открыта"
+
+#: main/models.py:87
+msgid "opened"
+msgstr "открыта"
+
+#: main/models.py:88
+msgid "temporarily suspended"
+msgstr "временно приостановлена"
+
+#: main/models.py:89
+msgid "closed already"
+msgstr "уже завершена"
+
+#: main/models.py:94
+msgid "Event code"
+msgstr "Код мероприятия"
+
+#: main/models.py:95
+msgid "Event name"
+msgstr "Имя мероприятия"
+
+#: main/models.py:96
+msgid "International name of Event"
+msgstr ""
+
+#: main/models.py:97
+msgid "Event date&time"
+msgstr "Дата&Время мероприятия"
+
+#: main/models.py:98
+msgid "Doors open at"
+msgstr "Сбор гостей с"
+
+#: main/models.py:99
+msgid "Venue (where?)"
+msgstr "Площадка (где?)"
+
+#: main/models.py:100
+msgid "International name of Venue (where?)"
+msgstr ""
+
+#: main/models.py:103
+msgid "Event address"
+msgstr "Адрес мероприятия"
+
+#: main/models.py:104
+msgid "International address of Event"
+msgstr ""
+
+#: main/models.py:105
+msgid "Send email to guests as result of registration"
+msgstr "Посылать гостю подтверждение по e-mail после его регистрации"
+
+#: main/models.py:106
+msgid "Registration status"
+msgstr "Статус регистрации"
+
+#: main/models.py:109
+msgid "event"
+msgstr "мероприятие"
+
+#: main/models.py:110
+msgid "events"
+msgstr "мероприятия"
+
+#: main/models.py:120 main/models.py:161
+msgid "Post date"
+msgstr "Время добавления"
+
+#: main/models.py:121
+msgid "Invitation code"
+msgstr "Код приглашения"
+
+#: main/models.py:122
+msgid "Language"
+msgstr "Язык"
+
+#: main/models.py:123
+msgid "Guest category"
+msgstr "Категория гостя"
+
+#: main/models.py:124 main/models.py:162 main/models.py:276 main/models.py:289
+#: main/models.py:306 main/models.py:335 main/models.py:349
+msgid "Last name"
+msgstr "Фамилия"
+
+#: main/models.py:125 main/models.py:163 main/models.py:277 main/models.py:290
+#: main/models.py:307 main/models.py:336 main/models.py:350
+msgid "First name"
+msgstr "Имя"
+
+#: main/models.py:126 main/models.py:164 main/models.py:278 main/models.py:291
+#: main/models.py:308 main/models.py:337 main/models.py:351
+msgid "Middle name"
+msgstr "Отчество"
+
+#: main/models.py:127
+msgid "Sex"
+msgstr "Пол"
+
+#: main/models.py:128 main/models.py:165
+msgid "Company"
+msgstr "Организация"
+
+#: main/models.py:129 main/models.py:166
+msgid "Position"
+msgstr "Должность"
+
+#: main/models.py:130 main/models.py:167 main/models.py:279 main/models.py:292
+#: main/models.py:309 main/models.py:338 main/models.py:352
+msgid "Contact phone"
+msgstr "Контактный телефон"
+
+#: main/models.py:131
+msgid "Mobile phone"
+msgstr "Мобильный телефон"
+
+#: main/models.py:132 main/models.py:170
+msgid "Assistant person"
+msgstr "Контакты помощника"
+
+#: main/models.py:133
+msgid "Invitation delivery mode"
+msgstr "Способ доставки приглашения"
+
+#: main/models.py:134 main/models.py:353
+msgid "Ticket delivery mode"
+msgstr "Способ доставки билета"
+
+#: main/models.py:135 main/models.py:169
+msgid "Address"
+msgstr "Адрес"
+
+#: main/models.py:136 main/models.py:173
+msgid "Status"
+msgstr "Статус"
+
+#: main/models.py:137
+msgid "Additional information"
+msgstr "Доп. информация"
+
+#: main/models.py:138
+msgid "Estimated number of guests"
+msgstr "Ожидаемое кол-во гостей"
+
+#: main/models.py:139 main/models.py:195
+msgid "Need a parking place"
+msgstr "Необходимо место на парковке"
+
+#: main/models.py:140
+msgid "Invitation sent"
+msgstr "Приглашение отправлено"
+
+#: main/models.py:141 main/models.py:175
+msgid "Sent date"
+msgstr "Время отправки"
+
+#: main/models.py:143 main/models.py:199
+msgid "Event"
+msgstr ""
+
+#: main/models.py:144
+msgid "Responce received"
+msgstr "Ответ получен"
+
+#: main/models.py:145 main/models.py:172
+msgid "Comments"
+msgstr "Комментарии"
+
+#: main/models.py:146
+msgid "Typographical personalisation"
+msgstr ""
+
+#: main/models.py:147
+msgid "Invitation type"
+msgstr "Пригласительный документ"
+
+#: main/models.py:148
+msgid "Entrance"
+msgstr ""
+
+#: main/models.py:152 main/models.py:160
+msgid "invitation"
+msgstr "Приглашение"
+
+#: main/models.py:153
+msgid "invitations"
+msgstr "Приглашения"
+
+#: main/models.py:168 main/models.py:280
+msgid "Email"
+msgstr "Email"
+
+#: main/models.py:171
+msgid "Number of seats"
+msgstr "Количество мест"
+
+#: main/models.py:174
+msgid "Tickets sent"
+msgstr "Билеты отправлены"
+
+#: main/models.py:176
+msgid "Parking allocated"
+msgstr ""
+
+#: main/models.py:177
+msgid "Card sent"
+msgstr ""
+
+#: main/models.py:178
+msgid "Card sent date"
+msgstr "Время отправки карты"
+
+#: main/models.py:179
+msgid "Lounge"
+msgstr ""
+
+#: main/models.py:180
+msgid "Places category"
+msgstr "Категория МЕСТ"
+
+#: main/models.py:181
+msgid "Places_allocated"
+msgstr ""
+
+#: main/models.py:182
+msgid "Mail sent date&time"
+msgstr "Дата&Время отправки почты"
+
+#: main/models.py:185 main/models.py:240
+msgid "confirmation"
+msgstr "подтверждение"
+
+#: main/models.py:186
+msgid "confirmations"
+msgstr "подтверждения"
+
+#: main/models.py:191
+msgid "Tickets issued"
+msgstr "Выдано билетов"
+
+#: main/models.py:229
+msgid "Section name"
+msgstr "Имя секции"
+
+#: main/models.py:232 main/models.py:241
+msgid "section"
+msgstr "секция"
+
+#: main/models.py:233
+msgid "sections"
+msgstr "секции"
+
+#: main/models.py:242
+msgid "Row"
+msgstr "Ряд"
+
+#: main/models.py:243
+msgid "Seat"
+msgstr "Место"
+
+#: main/models.py:246
+msgid "ticket"
+msgstr "билет"
+
+#: main/models.py:247
+msgid "tickets"
+msgstr "билеты"
+
+#: main/models.py:260
+msgid "You have entered incorrect code, please try again"
+msgstr "Введен неправильный код, пожалуйста, повторите"
+
+#: main/models.py:264
+msgid "This invitation is already registered, please, enter another code"
+msgstr "Указанный код уже зарегистрирован, пожалуйста, введите другой код"
+
+#: main/models.py:268
+msgid "Registration for event \""
+msgstr "Регистрация на мероприятие \""
+
+#: main/models.py:268
+msgid "\" is not opened at moment"
+msgstr "\" сейчас недоступна"
+
+#: main/models.py:268
+msgid "Please try later or check correctness of your code"
+msgstr "Пожалуйста, попробуйте позже или проверьте правильность ввода кода"
+
+#: main/models.py:273
+msgid "Code"
+msgstr "Код подтверждения"
+
+#: main/models.py:293
+msgid "Contact person"
+msgstr "Контактное лицо"
+
+#: main/models.py:294 main/models.py:354
+msgid ""
+"Your e-mail address to which you would like to receive reservation "
+"confirmation"
+msgstr ""
+"Ваш электронный адрес, на который мы пришлем подтверждение о резервировании "
+"мест"
+
+#: main/models.py:295 main/models.py:355
+msgid "Total number of tickets to be reserved under Your name"
+msgstr ""
+"Количество билетов (чтобы забронировать для Вас места в зрительном зале)"
+
+#: main/models.py:296 main/models.py:356
+msgid ""
+"Here You may leave your comments or ask a question to the Opening night "
+"Manager"
+msgstr ""
+"Здесь Вы можете оставить комментарий или задать вопрос менеджеру премьеры"
+
+#: main/models.py:310
+msgid "Contact person if other than above"
+msgstr "Контактное лицо (если это не Вы)"
+
+#: main/models.py:311
+msgid ""
+"The email address at which you would like to receive the copy of the "
+"confirmation"
+msgstr "Электронный адрес, на который мы пришлем копию подтверждения"
+
+#: main/models.py:313
+msgid "Should we use this address as temporary only for this case?"
+msgstr "Это временный адрес только для данного случая доставки"
+
+#: main/models.py:316 main/models.py:328 main/models.py:365
+msgid "Delivery address for courier service"
+msgstr "Почтовый адрес для доставки"
+
+#: main/models.py:339
+msgid ""
+"The email address at which you would like to receive an invitation to the "
+"concrete spectacle date"
+msgstr ""
+"Электронный адрес, на который Вы получите приглашение на конкретную дату "
+"спектакля"
+
+#: main/views.py:154
+msgid "Gala Opening Night: attendance confirmed"
+msgstr "Подтверждение регистрации на премьеру"
+
+#: main/views.py:220
+msgid "Sleeping Beauty: tickets for other day"
+msgstr "Спящая красавица: билеты на другую дату"
+
+#: main/views.py:276 main/views.py:336 main/views.py:392
+msgid "Sleeping Beauty: attendance confirmed"
+msgstr "Спящая красавица: регистрация завершена"
+
+#: main/views.py:451
+msgid "Mamma Mia!: attendance confirmed"
+msgstr "\"Mamma Mia!\": регистрация подтверждена"
+
+#: templates/attendance.html:8 templates/status-celeb_done-mail.html:7
+#: templates/status-celeb_done.html:7
+#: templates/status-newdate_done-mail.html:4
+#: templates/status-newdate_done.html:7
+#: templates/status-others_done_base.html:6
+#: templates/status-taras-addr_done-mail.html:7
+#: templates/status-taras-addr_done.html:8
+#: templates/status-taras-slf_done-mail.html:7
+#: templates/status-taras-slf_done.html:8 templates/test.html:7
+msgid "Dear Mr"
+msgstr "Уважаемый"
+
+#: templates/attendance.html:10 templates/status-celeb_done-mail.html:9
+#: templates/status-celeb_done.html:9
+#: templates/status-newdate_done-mail.html:6
+#: templates/status-newdate_done.html:9
+#: templates/status-others_done_base.html:8
+#: templates/status-taras-addr_done-mail.html:9
+#: templates/status-taras-addr_done.html:10
+#: templates/status-taras-slf_done-mail.html:9
+#: templates/status-taras-slf_done.html:10 templates/test.html:9
+msgid "Dear Mrs"
+msgstr "Уважаемая"
+
+#: templates/attendance.html:27
+msgid "I confirm that I will attend"
+msgstr "Да, я обязательно буду"
+
+#: templates/attendance.html:28
+msgid "I am unable to attend"
+msgstr "Нет, к сожалению, я не смогу присутствовать на премьере"
+
+#: templates/check_code.html:19 templates/status-newdate.html:9
+msgid "Error"
+msgstr "Ошибка"
+
+#: templates/check_code.html:22 templates/status-newdate.html:12
+msgid "Error in field"
+msgstr "Ошибка в поле"
+
+#: templates/check_code.html:28
+msgid ""
+"Please, enter your confirmation code (5 digits) stated on the invitation"
+msgstr ""
+"Введите, пожалуйста, Ваш код подтверждения (5 цифр), указанный в Приглашении"
+
+#: templates/check_code.html:35 templates/status-celeb.html:31
+#: templates/status-newdate.html:28 templates/status-others.html:46
+#: templates/status-prizers.html:30 templates/status-taras-addr.html:24
+#: templates/status-taras.html:31
+msgid "Submit"
+msgstr "Отправить"
+
+#: templates/check_code.html:38 templates/status-others.html:48
+msgid "Should you have any questions please contact our Opening night Manager"
+msgstr ""
+"За дополнительной информацией обращайтесь, пожалуйста, к менеджеру премьеры "
+
+#: templates/check_code.html:39 templates/registration_closed.html:11
+#: templates/registration_coming_soon.html:11 templates/status-others.html:49
+msgid "by calling +7 903 578 01 12"
+msgstr "по телефону +7 903 578 01 12"
+
+#: templates/registration_closed.html:10
+#: templates/registration_coming_soon.html:10
+msgid "If you have any questions please contact our Opening night Manager"
+msgstr ""
+"За дополнительной информацией обращайтесь, пожалуйста, к менеджеру премьеры "
+
+#: templates/status-celeb_done-mail.html:13
+#: templates/status-celeb_done.html:11
+#: templates/status-taras-addr_done-mail.html:13
+#: templates/status-taras-addr_done.html:14
+#: templates/status-taras-slf_done-mail.html:13
+#: templates/status-taras-slf_done.html:14
+msgid ""
+"thank you for confirming your attendance to the Gala World Premiere on "
+"December 16 at Luzhniki Palace of Sport"
+msgstr ""
+"Вы успешно подтвердили свое присутствие на мировой премьере ледового шоу "
+"\"Спящая красавица\" 16 декабря во Дворце спорта \"Лужники\""
+
+#: templates/status-celeb_done-mail.html:17
+#: templates/status-celeb_done.html:15
+msgid "You will obtain your"
+msgstr ""
+"В день премьеры Вы сможете обменять Ваше приглашение на билеты в количестве"
+
+#: templates/status-celeb_done-mail.html:17
+#: templates/status-celeb_done.html:15
+msgid ""
+"ticket(s) in exchange for the initiation on the day of the Premiere at the "
+"registration desk at the entrance"
+msgstr "шт. на стойке регистрации гостей во Дворце спорта Лужники на входе"
+
+#: templates/status-celeb_done-mail.html:17
+#: templates/status-celeb_done.html:15
+msgid "B"
+msgstr "Б"
+
+#: templates/status-celeb_done-mail.html:21
+#: templates/status-celeb_done.html:19
+#: templates/status-taras-addr_done-mail.html:17
+#: templates/status-taras-addr_done.html:18
+#: templates/status-taras-slf_done-mail.html:17
+#: templates/status-taras-slf_done.html:18
+msgid "Guests are invited from 18:00"
+msgstr "Сбор гостей в 18:00"
+
+#: templates/status-celeb_done-mail.html:22
+#: templates/status-celeb_done.html:20
+#: templates/status-taras-addr_done-mail.html:18
+#: templates/status-taras-addr_done.html:19
+#: templates/status-taras-slf_done-mail.html:18
+#: templates/status-taras-slf_done.html:19
+msgid "Performance starts at 19:00"
+msgstr "Начало представления в 19.00"
+
+#: templates/status-celeb_done-mail.html:26
+#: templates/status-celeb_done.html:24
+#: templates/status-newdate_done-mail.html:193
+#: templates/status-newdate_done.html:196
+#: templates/status-prizers_done-mail.html:17
+#: templates/status-prizers_done.html:24 templates/status-rejected.html:7
+#: templates/status-taras-addr_done-mail.html:40
+#: templates/status-taras-addr_done.html:41
+#: templates/status-taras-slf_done-mail.html:42
+#: templates/status-taras-slf_done.html:43
+msgid "With Best Regards"
+msgstr "C уважением"
+
+#: templates/status-newdate_done-mail.html:9
+#: templates/status-newdate_done.html:12
+msgid ""
+"thank you for your Registration. From December 19 until December 27 You may "
+"contact Victoria Korableva to choose and book tickets for other day."
+msgstr ""
+"благодарим Вас за ответ. С 16 декабря  по 26 декабря  Вы можете связаться по "
+"телефону +7 495 780-35-53 с Викторией Кораблёвой, выбрать и согласовать "
+"удобные для вас дату и время спектакля."
+
+#: templates/status-newdate_done-mail.html:11
+#: templates/status-newdate_done.html:14
+msgid "Our performances are on"
+msgstr "Наши спектакли идут по следующим дням"
+
+#: templates/status-newdate_done-mail.html:14
+#: templates/status-newdate_done.html:17
+msgid "Date"
+msgstr "Бартер"
+
+#: templates/status-newdate_done-mail.html:16
+#: templates/status-newdate_done.html:19
+msgid "st"
+msgstr "е"
+
+#: templates/status-newdate_done-mail.html:16
+#: templates/status-newdate_done-mail.html:18
+#: templates/status-newdate_done-mail.html:20
+#: templates/status-newdate_done.html:19 templates/status-newdate_done.html:21
+#: templates/status-newdate_done.html:23
+msgid "show"
+msgstr "шоу"
+
+#: templates/status-newdate_done-mail.html:18
+#: templates/status-newdate_done.html:21
+msgid "nd"
+msgstr "е"
+
+#: templates/status-newdate_done-mail.html:20
+#: templates/status-newdate_done.html:23
+msgid "rd"
+msgstr "е"
+
+#: templates/status-newdate_done-mail.html:25
+#: templates/status-newdate_done-mail.html:74
+#: templates/status-newdate_done-mail.html:123
+#: templates/status-newdate_done-mail.html:172
+#: templates/status-newdate_done.html:28 templates/status-newdate_done.html:77
+#: templates/status-newdate_done.html:126
+#: templates/status-newdate_done.html:175
+msgid "Friday"
+msgstr "Пятница"
+
+#: templates/status-newdate_done-mail.html:32
+#: templates/status-newdate_done-mail.html:81
+#: templates/status-newdate_done-mail.html:130
+#: templates/status-newdate_done-mail.html:179
+#: templates/status-newdate_done.html:35 templates/status-newdate_done.html:84
+#: templates/status-newdate_done.html:133
+#: templates/status-newdate_done.html:182
+msgid "Saturday"
+msgstr "Суббота"
+
+#: templates/status-newdate_done-mail.html:39
+#: templates/status-newdate_done-mail.html:88
+#: templates/status-newdate_done-mail.html:137
+#: templates/status-newdate_done-mail.html:186
+#: templates/status-newdate_done.html:42 templates/status-newdate_done.html:91
+#: templates/status-newdate_done.html:140
+#: templates/status-newdate_done.html:189
+msgid "Sunday"
+msgstr "Воскресенье"
+
+#: templates/status-newdate_done-mail.html:46
+#: templates/status-newdate_done-mail.html:95
+#: templates/status-newdate_done-mail.html:144
+#: templates/status-newdate_done.html:49 templates/status-newdate_done.html:98
+#: templates/status-newdate_done.html:147
+msgid "Monday"
+msgstr "Понедельник"
+
+#: templates/status-newdate_done-mail.html:53
+#: templates/status-newdate_done-mail.html:102
+#: templates/status-newdate_done-mail.html:151
+#: templates/status-newdate_done.html:56
+#: templates/status-newdate_done.html:105
+#: templates/status-newdate_done.html:154
+msgid "Tuesday"
+msgstr "Вторник"
+
+#: templates/status-newdate_done-mail.html:60
+#: templates/status-newdate_done-mail.html:109
+#: templates/status-newdate_done-mail.html:158
+#: templates/status-newdate_done.html:63
+#: templates/status-newdate_done.html:112
+#: templates/status-newdate_done.html:161
+msgid "Wednesday"
+msgstr "Среда"
+
+#: templates/status-newdate_done-mail.html:67
+#: templates/status-newdate_done-mail.html:116
+#: templates/status-newdate_done-mail.html:165
+#: templates/status-newdate_done.html:70
+#: templates/status-newdate_done.html:119
+#: templates/status-newdate_done.html:168
+msgid "Thursday"
+msgstr "Четверг"
+
+#: templates/status-prizers_done-mail.html:6
+#: templates/status-prizers_done.html:7
+msgid "Dear Guest "
+msgstr "Уважаемый Гость "
+
+#: templates/status-prizers_done-mail.html:9
+#: templates/status-prizers_done.html:11
+msgid ""
+"Thank you for confirming your attendance to the \"Mamma Mia!\" at MDM "
+"Theatre, Komsomolsky prospect 28."
+msgstr "Спасибо за подтверждение посещения премьеры 21 декабря"
+
+#: templates/status-prizers_done-mail.html:13
+#: templates/status-prizers_done.html:19
+msgid "Soon we will mail you an invitation to the concrete spectacle date"
+msgstr ""
+"Вам будет направлен email с Приглашением на 1 из спектаклей MAMMA MIA! на 1 "
+"лицо в период проката мюзикла."
+
+#: templates/status-prizers_done.html:15
+msgid ""
+"You will get a confirmation sent to your e-mail address that the electronic "
+"form was successfully submitted."
+msgstr ""
+"Копия данного ответа будет выслана на указанный Вами электронный адрес."
+
+#: templates/status-rejected.html:5
+msgid ""
+"Thank you for your Registration. You are always welcome to our performances."
+msgstr "Благодарим за ответ, мы будем рады видеть Вас на наших спектаклях."
+
+#: templates/status-taras-addr_done-mail.html:22
+#: templates/status-taras-addr_done.html:23
+msgid "Your"
+msgstr "Ваши билеты в количестве"
+
+#: templates/status-taras-addr_done-mail.html:22
+#: templates/status-taras-addr_done.html:23
+msgid "ticket(s) will be delivered  to"
+msgstr "шт. будут Высланы Вам по адресу"
+
+#: templates/status-taras-addr_done-mail.html:23
+#: templates/status-taras-addr_done.html:24
+msgid "before December 14"
+msgstr "до 14 Декабря"
+
+#: templates/status-taras-addr_done-mail.html:28
+#: templates/status-taras-addr_done.html:29
+#: templates/status-taras-slf_done-mail.html:34
+#: templates/status-taras-slf_done.html:35
+msgid "Driving directions to Luzhniki Palace of Sport"
+msgstr "Схема проезда во Дворец Спорта \"Лужники\""
+
+#: templates/status-taras-addr_done-mail.html:36
+#: templates/status-taras-addr_done.html:37
+msgid ""
+"If the tickets are not delivered to you before December 14, please, contact "
+"the Opening Night manager by phone +7 903 578-01-12"
+msgstr ""
+"Если Вы не получили билеты до 14 декабря, пожалуйста, свяжитесь с менеджером "
+"премьеры по телефону +7 903 578-01-12"
+
+#: templates/status-taras-slf_done-mail.html:22
+#: templates/status-taras-slf_done.html:23
+msgid "You can pick up in person your"
+msgstr "Вы можете забрать Ваши билеты в количестве"
+
+#: templates/status-taras-slf_done-mail.html:22
+#: templates/status-taras-slf_done.html:23
+msgid "ticket(s) on December 12-14 from Stage Entertainment office"
+msgstr "шт. с 12 по 14 декабря из офиса Стейдж Энтертейнмент по адресу"
+
+#: templates/status-taras-slf_done-mail.html:23
+#: templates/status-taras-slf_done.html:24
+msgid "Moscow, 28 Komsomolsky ave., MDM Theater, Staff entrance"
+msgstr "Москва, Комсомольский проспект 28, Театр МДМ, служебный вход"
+
+#: templates/status-taras-slf_done-mail.html:27
+#: templates/status-taras-slf_done.html:28
+msgid "Please, contact us before arrival at the office by +7 495 780-35-53"
+msgstr "Пожалуйста, предварительно позвоните по тел. +7 495 780-35-53"
+
+#: templates/status-taras-slf_done-mail.html:30
+#: templates/status-taras-slf_done.html:31
+msgid "Remember, you MUST have your Invitation to pick up your tickets"
+msgstr "Просим при себе иметь Пригласительный билет"
+
+#~ msgid "The Little Mermaid"
+#~ msgstr "Русалочка"
+
+#~ msgid "Mamma mia!"
+#~ msgstr "Mamma mia!"
+
+#~ msgid "ACTION on Mamma mia!"
+#~ msgstr "Акция на \"Mamma mia!\""
+
+#~ msgid "Show"
+#~ msgstr "Шоу"
+
+#~ msgid "please confirm your attendance to the Gala Opening Night"
+#~ msgstr "планируете ли Вы посетить премьеру?"
+
+#~ msgid ""
+#~ "If you have any questions please contact our Opening night Manager by "
+#~ "calling +7 903 578 01 12"
+#~ msgstr ""
+#~ "За дополнительной информацией обращайтесь, пожалуйста, к менеджеру "
+#~ "премьеры по телефону: +7 903 578 01 12"
+
+#~ msgid "Thank you for confirming your attendance to the Gala Opening Night"
+#~ msgstr " Вы успешно подтвердили свое присутствие на Премьере"
+
+#~ msgid ""
+#~ " «The Wizard of OZ» on December 21, at Luzhniki Palace of Sport, "
+#~ "Luzhnetskaya naberezhnaya, 24."
+#~ msgstr ""
+#~ " ледового арена-шоу «Волшебник Страны Оз», которая состоится 21 декабря "
+#~ "2013 года во Дворце спорта «Лужники» по адресу: Лужнецкая набережная, дом "
+#~ "24."
+
+#~ msgid ""
+#~ "Soon we will mail the tickets for You at the post address You specified:"
+#~ msgstr ""
+#~ "Скоро Вам будут отправлены ваши билеты на Премьеру по указанному Вами "
+#~ "адресу"
+
+#~ msgid ""
+#~ "In the case of absence of Your tickets till 19th of December please "
+#~ "contact our Opening night Manager"
+#~ msgstr ""
+#~ "В случае, если Вы не получите билеты до 19 декабря, пожалуйста, свяжитесь "
+#~ "с менеджером Премьеры "
+
+#~ msgid ""
+#~ "On the day of the performance please present Your invitation on arrival "
+#~ "at the entrance \"b\" (Russian sign \"Be\" - Guest Reception) to receive "
+#~ "your tickets"
+#~ msgstr ""
+#~ "В день Премьеры на стойке регистрации Гостей на подъезде «Б» Вы сможете "
+#~ "обменять Ваше приглашение на билеты"
+
+#~ msgid ""
+#~ "Your parking card entitles you to receive a parking place at the P10 "
+#~ "area. Please, note that the parking places are limited."
+#~ msgstr ""
+#~ "Ваша парковочная карта предоставляет Вам место на парковке P10. "
+#~ "Пожалуйста, обратите внимание, что количество мест на парковке ограничено."
+
+#~ msgid "Performance starts at 14:30"
+#~ msgstr "Начало представления в 14.30"
+
+#~ msgid ""
+#~ "Thank you for your Registration. The registration copy will be sent to "
+#~ "the email address you provided."
+#~ msgstr ""
+#~ "Благодарим Вас за ответ. Копия Вашей регистрации  будет выслана Вам на "
+#~ "указанный  электронный адрес."
+
+#~ msgid ""
+#~ "Thank you for confirming your attendance to the Gala Premiere on October "
+#~ "5 at MDM Theatre, Komsomolsky prospect 28"
+#~ msgstr ""
+#~ "Вы успешно  подтвердили свое присутствие на премьере мюзикла «CHICAGO», "
+#~ "которая состоится 5 октября 2013 года в Театре МДМ по адресу: "
+#~ "Комсомольский проспект, дом 28."
+
+#~ msgid ""
+#~ "Soon we will mail You a Confirmation Card confirming your presence at the "
+#~ "Opening Night."
+#~ msgstr "Скоро Вам будет отправлена персональная карта-подтверждение. "
+
+#~ msgid ""
+#~ "Please save Your Confirmation card and present it on arrival at the MDM "
+#~ "Theater (Saturday, October 5)."
+#~ msgstr ""
+#~ "Сохраните Вашу карту-подтверждение и предъявите ее при входе в Театр МДМ "
+#~ "в день премьеры мюзикла «CHICAGO» (суббота, 5 октября 2013г.).В фойе "
+#~ "Театра МДМ на стойке аккредитации гостей, по предъявлении персональной "
+#~ "карты-подтверждения и удостоверения личности, Вы получите билеты с "
+#~ "указанием мест в зале."
+
+#~ msgid ""
+#~ "The Confirmation Card is intended for personal use only and is not "
+#~ "transferable. Valid for 2 people."
+#~ msgstr ""
+#~ "Карта-подтверждение действительна на два лица, является персональной и не "
+#~ "может быть передана третьим лицам."
+
+#~ msgid "The Three Musketeers: attendance confirmed"
+#~ msgstr "Три Мушкетёра: посещение подтверждено"
+
+#~ msgid ""
+#~ "Use this address as temporary for delivery of the Confirmation Card only "
+#~ "for \"Mamma Mia!\"?"
+#~ msgstr ""
+#~ "Использовать данный адрес только для доставки карты-подтверждения на "
+#~ "мюзикл \"Mamma Mia!\"?"
+
+#~ msgid "Dear "
+#~ msgstr "Уважаемый "
+
+#~ msgid ""
+#~ "Should you have any questions on filling in the form please contact our  "
+#~ "Opening night Manager by calling +7 903 578 01 12"
+#~ msgstr ""
+#~ "В случае возникновения вопросов по заполнению формы обращайтесь к "
+#~ "менеджеру премьеры по телефону: +7 903 578 01 12"
+
+#~ msgid "The Confirmation Card will be delivered to"
+#~ msgstr "Карта-подтверждение будет выслана Вам по адресу"
+
+#~ msgid "Tarasova"
+#~ msgstr "Тарасова"
+
+#~ msgid "Mark selected invitations as celebrities and not sent"
+#~ msgstr "Пометить выбранные приглашения как знаменитости и не отправленны"
+
+#~ msgid "Sleeping Beauty"
+#~ msgstr "Спящая красавица"
+
+#~ msgid "I would like to receive an Invitation to the Show for another date"
+#~ msgstr "Мне хотелось бы получить Приглашение на другой день"
+
+#~ msgid "The confirmation code you entered is not correct"
+#~ msgstr "Введен неправильный код, пожалуйста, повторите"
+
+#~ msgid "The confirmation code you entered is already confirmed"
+#~ msgstr "Указанный код уже зарегистрирован, пожалуйста, введите другой код"
+
+#~ msgid "Not confirmed"
+#~ msgstr "Не подтвержден"

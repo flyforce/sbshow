@@ -1,0 +1,1 @@
+{% load i18n %}{% autoescape off %}{% filter striptags %}{% include "status-others_done-mail.html" %}{% endfilter %}{% endautoescape %}

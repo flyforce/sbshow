@@ -1,0 +1,24 @@
+from datetime import datetime
+from django.contrib import admin
+from django.contrib.auth.models import User
+from django_extensions.admin import ForeignKeyAutocompleteAdmin
+from main.models import Invitation, Confirmation, Section, Ticket, Show
+from django.utils.translation import ugettext_lazy as _
+from django.http import HttpResponse
+from django.core import serializers
+#import csv
+
+class InvitationAdmin(ForeignKeyAutocompleteAdmin):
+    pass
+	
+
+
+class SectionAdmin(admin.ModelAdmin):
+    pass
+
+class ShowAdmin(admin.ModelAdmin):
+    pass
+
+admin.site.register(Invitation,InvitationAdmin)
+admin.site.register(Section,SectionAdmin)
+admin.site.register(Show,ShowAdmin)

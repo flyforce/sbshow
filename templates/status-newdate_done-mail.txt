@@ -1,0 +1,36 @@
+{% load i18n %}
+{%if inv.sex = 'M' %}{% trans 'Dear Mr' %}{% else %}{% trans 'Dear Mrs' %}{% endif %} {{ inv.f_name }},
+{% trans 'thank you for your Registration. From December 19 until December 27 You may contact Victoria Korableva to choose and book tickets for other day.' %}
+
+{% trans 'Our performances are on' %}:
+
+{% trans 'Date' %}                    1{% trans 'st' %} {% trans 'show' %}  2{% trans 'nd' %} {% trans 'show' %}  3{% trans 'rd' %} {% trans 'show' %}
+
+16.12.11   {% trans 'Friday' %}                            19.00
+17.12.11   {% trans 'Saturday' %}      11.00     14.30     18.00
+18.12.11   {% trans 'Sunday' %}        11.00     14.30     18.00
+19.12.11   {% trans 'Monday' %}
+20.12.11   {% trans 'Tuesday' %}
+21.12.11   {% trans 'Wednesday' %}
+22.12.11   {% trans 'Thursday' %}
+23.12.11   {% trans 'Friday' %}                            19.00
+24.12.11   {% trans 'Saturday' %}      11.00     14.30     18.00
+25.12.11   {% trans 'Sunday' %}        11.00     14.30     18.00
+26.12.11   {% trans 'Monday' %}
+27.12.11   {% trans 'Tuesday' %}       11.00     14.30     19.00
+28.12.11   {% trans 'Wednesday' %}     11.00     14.30     19.00
+29.12.11   {% trans 'Thursday' %}      11.00     14.30     19.00
+30.12.11   {% trans 'Friday' %}        11.00     14.30     19.00
+31.12.11   {% trans 'Saturday' %}
+01.01.12   {% trans 'Sunday' %}
+02.01.12   {% trans 'Monday' %}        11.00     14.30     18.00
+03.01.12   {% trans 'Tuesday' %}       11.00     14.30     18.00
+04.01.12   {% trans 'Wednesday' %}     11.00     14.30     18.00
+05.01.12   {% trans 'Thursday' %}
+06.01.12   {% trans 'Friday' %}        11.00     14.30     18.00
+07.01.12   {% trans 'Saturday' %}      11.00     14.30     18.00
+08.01.12   {% trans 'Sunday' %}        11.00     14.30     18.00
+
+
+{% trans 'With Best Regards' %}
+"Stage Entertainment"

@@ -1,0 +1,1 @@
+{% load i18n %}{% get_current_language as LANGUAGE_CODE %}{% if inv.sex == 'M' %}{% trans 'Dear Mr' %}{% else %}{% trans 'Dear Mrs' %}{% endif %} {% if inv.language == 'en' %}{{ inv.l_name }}{% else %}{% if inv.s_name and inv.s_name != '' and inv.s_name != ' ' and inv.s_name != '-' %}{{ inv.f_name }} {{ inv.s_name }}{% else %}{{ inv.f_name }}{% endif %}{% endif %},

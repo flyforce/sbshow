@@ -1,0 +1,82 @@
+{% extends "base.html" %}
+{% load i18n %}{% get_current_language as LANGUAGE_CODE %}
+{% block content %}
+
+{% if form.errors %}
+<div class="error">
+  <ul>
+  {% for error in form.non_field_errors %}
+     <li><strong>{{ error|escape }}</strong></li>
+  {% endfor %}
+  {% for field in form %}
+    {% if field.errors %}<li><strong>'{{ field.label }}'</strong>: {{ field.errors|striptags }}</li>{% endif %}
+  {% endfor %}
+  </ul>
+</div>
+{% endif %}
+<body onload="document.getElementById('id_email').focus()">
+<form action="{% url main.views.others %}" method="post">{% csrf_token %}
+<table align="center" class="formTable" cellspacing="1" cellpadding="3">
+{% if inv.language == 'ru' %}
+ Пожалуйста, подтвердите контактную информацию:
+{% else %}
+ Please confirm your contact details:
+{% endif %} 
+
+<tr><th{% if form.l_name.field.required %} class="fieldRequired"{% endif %}><label for="id_l_name">{{ form.l_name.label }}:</label></th><td>{{ form.l_name }}</td></tr>
+<tr><th{% if form.f_name.field.required %} class="fieldRequired"{% endif %}><label for="id_f_name">{{ form.f_name.label }}:</label></th><td>{{ form.f_name }}</td></tr>
+
+{% if inv.language == 'ru' %}
+<tr><th{% if form.s_name.field.required %} class="fieldRequired"{% endif %}><label for="id_s_name">{{ form.s_name.label }}:</label></th><td>{{ form.s_name }}</td></tr>
+{% endif %}
+
+<tr><th{% if form.contact_phone.field.required %} class="fieldRequired"{% endif %}><label for="id_contact_phone">
+	{% if inv.language == 'ru' %}Контактный телефон:{% else %}Contact telephone number:{% endif %}
+	</label></th><td>{{ form.contact_phone }}</td></tr>
+
+<tr><th{% if form.assistant_person.field.required %} class="fieldRequired"{% endif %}><label for="id_assistant_person">
+	{% if inv.language == 'ru' %}Контактное лицо, если это не Вы:
+	{% else %}Contact name, if different from above:
+	{% endif %}
+	</label></th><td>{{ form.assistant_person }}</td></tr>
+
+<tr><th{% if form.email.field.required %} class="fieldRequired"{% endif %}><label for="id_email">
+	{% if inv.language == 'ru' %} 
+		Электронный адрес, на который мы отправим Вам копию подтверждения регистрации:
+	{% else %} 
+		Email address for receipt of confirmation:
+	{% endif %}
+	</label></th><td>{{ form.email }}</td></tr>
+
+{% if form.tix_num %}
+<tr><th{% if form.tix_num.field.required %} class="fieldRequired"{% endif %}><label for="id_tix_num">{{ form.tix_num.label }}:</label></th><td>{{ form.tix_num }}</td></tr>
+{% endif %}
+
+{% if form.address %}
+    <tr><th{% if form.address.field.required %} class="fieldRequired"{% endif %}><label for="id_address">
+	{% if inv.language == 'ru' %}
+		Фактический адрес и контактные данные для доставки билетов
+	{% else %}
+		The address to receive your tickets 
+	{% endif %}
+	:</label></th><td>{{ form.address }}</td></tr>
+{% endif %}
+
+{% if form.is_temp_addr %}
+    <tr><th{% if form.is_temp_addr.field.required %} class="fieldRequired"{% endif %}><label for="id_is_temp_addr">{{ form.is_temp_addr.label }}:</label></th><td>{{ form.is_temp_addr }}</td></tr>
+{% endif %}
+
+</table><br/>
+
+<input type="submit" class="formButton" value="{% trans 'Submit' %}"/>
+<p>
+{% if inv.language == 'ru' %}
+В случае возникновения вопросов по заполнению формы <br/>
+обращайтесь к менеджеру премьеры по телефону: +7 903 578 01 12
+{% else %}
+Should you have any questions regarding answering this form<br/>
+please contact our opening night manager by calling +7 903 578 01 12
+{% endif %}
+</form>
+
+{% endblock %}

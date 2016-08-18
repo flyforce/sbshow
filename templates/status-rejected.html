@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% get_current_language as LANGUAGE_CODE %}
+{% block content %}
+<p>
+{% if inv.language = 'ru' %}
+Благодарим Вас за ответ.<br/>
+Мы будем рады видеть Вас на наших спектаклях!
+<br/><br/>
+C уважением,<br/>
+Театральная компания «Стейдж Энтертейнмент»
+
+{% else %}
+Thank you for your Registration. <br/>
+We look forward to welcoming you to the show.
+<br/><br/>
+With Best Regards,<br/>
+Stage Entertainment
+
+{% endif %} 
+</p>
+
+{% endblock %}
